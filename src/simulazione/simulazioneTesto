@@ -1,0 +1,47 @@
+Simulazione
+ id: int
+ 1) Creare una classe astratta Employee con i seguenti attributi:--
+name: String
+ efficiencyIndex: float
+ Implementare anche costruttore e getter per ogni attributo ed un setter per l’attributo
+ “efficiencyIndex”.
+ Aggiungere un metodo astratto “canApplyForPromotion()” che ritorna un boolean.
+ Aggiungere un metodo astratto “mayBeDemoted()” che ritorna un boolean.
+ 2) Implementare una classe Workman che eredità da Employee ed ha i seguenti
+ attributi:
+weeklyWorkingHours: int
+ Implementare anche costruttore ed un setter per l’attributo weeklyWorkingHours.
+ Il metodo “canApplyForPromotion()” ritorna true se weeklyWorkingHours > 35 ed
+ efficiencyIndex > 0.65.
+ Il metodo “mayBeDemoted()” ritorna sempre false.
+ yearsAsHead: int
+ 3) Implementare una classe Head che eredità da Employee ed ha i seguenti attributi:
+Implementare anche costruttore ed un setter per l’attributo yearsAsHead.
+ Il metodo “canApplyForPromotion()” ritorna sempre false.
+ Il metodo “mayBeDemoted()” ritorna true se e solo se yearsAsHead < 10 e
+ efficiencyIndex < 0.5.
+ 4) Scrivere un metodo main in una classe Main in cui si effettuano le seguenti
+ operazioni:
+ a) Inizializzare una lista coi seguenti oggetti Workman:
+ i)
+ 0, Mario Gialli, 0.5, 20
+ ii)
+ iii)
+ 5, Gianni Fannulloni, 0.2, 30
+ 17, Giorgia Lavoroni, 0.85, 40
+ b) Inizializzare una lista coi seguenti oggetti Head:
+ i)
+ 3, Alessio Antichi, 0.55, 20
+ ii)
+ iii)
+ 1, Marianna Figlidelcapo, 0.3, 2
+ 9, Gianluigi Figlidelcapo, 0.3, 4
+ c) Stampare a schermo tutti gli operai che potrebbero essere promossi
+ d) Stampare a schermo tutti i direttori che potrebbero essere declassati
+e) Creare una lista di oggetti Employee unendo le due liste precedentemente
+ create
+ f)
+ Stampare il nome e l’efficiencyIndex di ogni persona
+ g) Stampare il nome di ogni persona escludendo le lettere maiuscole
+ h) Stampare il nome di ogni persona e l’efficiencyIndex sostituendo il carattere
+ “.” con “,” e le cifre con ‘?'

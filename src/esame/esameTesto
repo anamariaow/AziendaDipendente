@@ -1,0 +1,47 @@
+Esame
+ 1) Creare una classe astratta Person definito dai seguenti attributi:
+firstName: String--
+ lastName: String
+ age: int
+ Implementare anche costruttore e getter per ogni attributo ed un setter per l’attributo
+ “age”.
+ Aggiungere un metodo astratto “canApplyAsTutor()” che ritorna un boolean.
+ Aggiungere un metodo astratto “canApplyAsHead()” che ritorna un boolean.
+ courseYear: int
+ 2) Implementare una classe Student che eredità da Person ed ha i seguenti attributi:
+Implementare anche costruttore e getter per ogni attributo per cui è necessario ed un
+ setter per l’attributo “courseYear”.
+ Il metodo “canApplyAsTutor()” di questa classe deve restituire true se e solo se
+ courseYear >= 3.
+ Il metodo “canApplyAsHead()” di questa classe deve restituire sempre false.
+ 3) Implementare una classe Professor che eredità da Person ed ha i seguenti attributi:
+yearsOfExperience: int
+ Implementare anche costruttore e getter per ogni attributo per cui è necessario ed un
+ setter per l’attributo “yearsOfExperience”.
+ Il metodo “canApplyAsTutor()” di questa classe deve restituire sempre true.
+ Il metodo “canApplyAsHead()” di questa classe deve restituire true se e solo se
+ yearsOfExperience >= 10.
+ 4) Scrivere un metodo main in una classe Main in cui si eseguono le seguenti
+ operazioni:
+ a) Inizializzare una lista di 3 oggetti Student con i seguenti dati:
+ i)
+ Mario Rossi, 23 anni, 5° anno
+ ii)
+ iii)
+ Gianni Gialli, 19 anni, 2° anno
+ Rosa Matricole, 18 anni, 1° anno
+ b) Inizializzare una lista di 2 oggetti Professor con i seguenti dati:
+ i)
+ Rosario Novelli, 35 anni, 5 anni di esperienza
+ ii)
+ Agatina Sperti, 45 anni, 15 anni di esperienza
+ c) Stampare a schermo tutti gli studenti che possono fare richiesta come tutor
+ d) Stampare a schermo tutti i professori che possono fare richiesta come capi
+ dipartimento
+ e) Creare una lista di oggetti Person unificando le due liste precedentemente
+ create.
+ f)
+ Stampare il nome completo di ogni persona
+ g) Stampare il nome completo di ogni persona escludendo le lettere ‘a’, ‘o’, i’
+h) Stampare il nome completo di ogni persona sostituendo le lettere maiuscole
+ con il carattere ‘*'
